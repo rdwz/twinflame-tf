@@ -1,0 +1,53 @@
+---
+import { COPYRIGHT_OWNER } from '~/consts'
+
+const currentYear = new Date().getFullYear()
+const paypal_link = 'https://paypal.me/redwerkz'
+---
+
+<footer>
+  <p>
+    Made with 💗 in 🏳️‍🌈 <a href="https://www.wikiwand.com/en/Cologne_Pride" target="_blank">Cologne</a> |
+    Build with 🚀 <a href="https://astro.build/about/">Astro</a> |
+    Donate me a 🥝 <a href="https://www.buymeacoffee.com/rdwz" target="_blank">Kiwi</a>
+  </p>
+  <!-- deployed on <a href="https://deta.space">DETA</a> -->
+  <p>
+    <a href="https://www.buymeacoffee.com/rdwz" target="_blank">{COPYRIGHT_OWNER}</a> &copy {currentYear}.
+    Some Rights reserved.
+    All Content is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY</a>, unless stated otherwise.
+    Feel free to share and modify the content, just remember to give credit to <a href={Astro.site}>Astrological.Guru</a>
+  </p>
+  <!-- <p>
+    Source Code will be available
+  </p> -->
+    <!-- Crafted with 💟 Determined to spread spiritual knowledge ⚛️ Please <a href={paypal_link}>Donate</a> to support this project -->
+    <!-- All content on this site is licensed under a Creative Commons Attribution 4.0 International license. -->
+</footer>
+
+<style>
+  /* footer {
+    margin: auto;
+		padding: 1.5rem;
+		max-width: 80ch;
+
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    font-size: small;
+  } */
+  footer {
+    font-family: monospace;
+    justify-content: end;
+    line-height: 1.5;
+    padding: 0 1rem;
+    margin: 3rem 0;
+    max-width: 80ch;
+  }
+
+  a:link {
+    font-weight: bold;
+  }
+</style>

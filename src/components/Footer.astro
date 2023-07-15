@@ -1,0 +1,27 @@
+---
+const coffee_link = 'https://www.buymeacoffee.com/rdwz'
+const paypal_link = 'https://www.paypal.com/paypalme/redwerkz'
+const insta_link = 'https://www.instagram.com/twinflame.tf'
+const ytube_link = 'https://www.youtube.com/@twinflame-tf'
+---
+
+<footer class="font-family-monospace text-3xl mt-3 self-start  text-center">
+  <a class="font-bold text-black" href={coffee_link}>RDWZ</a>
+  <a class="font-bold text-black" href={paypal_link}>PayPal</a>
+  <a class="font-bold text-black" href={insta_link}>Instagram</a>
+  <a class="font-bold text-black" href={ytube_link}>YouTube</a>
+  <!-- <a href="https://alchemicalsouls.group">Alchemical Souls</a> -->
+</footer>
+
+<style>
+  footer {
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: -1px 2px 4px hsla(204, 100%, 22%, 0.815);
+  }
+
+  a:not(:first-child)::before {
+    content: '∿';
+    padding-bottom: 2rem;
+    padding-right: .9rem;
+  }
+</style>

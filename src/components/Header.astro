@@ -1,0 +1,32 @@
+---
+import HeaderLink from './HeaderLink.astro'
+import { SITE_TITLE } from '../consts'
+---
+
+<header>
+	<h1><a href="#">Welcome to <span class="text-gradient">{SITE_TITLE}</span></a>
+	</h1>
+	<h2>
+		{SITE_TITLE}
+	</h2>
+	<nav>
+		<HeaderLink href="/">Home</HeaderLink>
+		<HeaderLink href="/podcast">Podcast</HeaderLink>
+		<HeaderLink href="/about">About</HeaderLink>
+	</nav>
+</header>
+
+<style lang="scss">
+	header {
+		margin: 0em 0 2em;
+    position: absolute;
+	}
+	h1 {
+		font-size: 2.5rem;
+		font-weight: 800;
+		margin: 0;
+	}
+	h2 {
+		margin: 0.5em 0;
+	}
+</style>

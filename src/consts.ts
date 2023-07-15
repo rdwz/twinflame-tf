@@ -1,0 +1,5 @@
+export const SITE_TITLE = 'Unraveling the Mysteries of Kindred Spirits: Essential Information and Genuine Stories from a Community of True Twin Flames'
+export const SITE_DESCRIPTION = 'Embark on a captivating journey through the realm of twin flames, a connection beyond ordinary. Uncover meaning, explore love\'s path, learn from real experiences, and gain insights on this transformative odyssey.'
+export const SITE_DOMAIN = 'twinflame.tf'
+export const IMAGE = '/twinflame.webp'
+export const COPYRIGHT_OWNER = 'RDWZ'

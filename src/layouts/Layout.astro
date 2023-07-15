@@ -1,0 +1,42 @@
+---
+import BaseHead from "~/components/BaseHead.astro"
+// import 'modern-css-reset/dist/reset.min.css'
+import { SITE_DOMAIN } from "~/consts"
+
+export interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <BaseHead title={title} description={description} />
+    <style is:global>
+      @font-face {
+        font-family: 'ladi-gross';
+        font-display: swap;
+        font-style: normal;
+        src: url('/font/ladi-gross.woff2') format('woff2');
+        -subfont-text: 'abcefilnoqrtuv';
+      }
+    </style>
+    <link rel="stylesheet" href="/css/reset.css">
+    <script
+      defer
+      src="/stats/js/script.js"
+      data-api="/stats/api/event"
+      data-domain={SITE_DOMAIN}
+    ></script>
+  </head>
+	<body class="grid justify-center bg-gray-800 min-h-screen w-full">
+		<slot />
+    <script defer src="./js/script.js"></script>
+    <script defer src="./js/simplex-noise.js"></script>
+    <script defer src="./js/cascading-waves.js"></script>
+	</body>
+</html>
+

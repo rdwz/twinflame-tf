@@ -1,0 +1,39 @@
+---
+import Footer from '~/components/Footer.astro';
+import Layout from '~/layouts/Layout.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '~/consts';
+---
+
+<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+	<main class="grid items-center justify-center absolute min-h-screen w-full">
+    <h1 class="font-bold text-center self-end text-9xl uppercase">Vibrational<br />Frequencies</h1>
+    <Footer />
+  </main>
+  <script>
+    window.canvasOptions = {
+      autoClear: true,
+      autoCompensate: false,
+      autoPushPop: true,
+      canvas: true,
+      centered: true,
+      width: null,
+      height: null
+    };
+  </script>
+</Layout>
+
+<style>
+  main,
+  h1 {
+    background: -webkit-linear-gradient(hsla(300, 82%, 48%, 0.6), rgba(22, 42, 222, 0.5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: rgba(222, 22, 222, 0.5); */
+    /* font-family: 'ladi-gross'; */
+  }
+
+  h1 {
+    font-family: 'ladi-gross';
+    text-shadow: -1px 3px 5px hsla(0, 0%, 0%, 0.6);
+  }
+</style>
