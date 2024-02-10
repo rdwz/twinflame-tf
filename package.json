@@ -23,7 +23,7 @@
     "eslint-plugin-react": "^7.32.2"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.19.7",
+    "@astrojs/mdx": "^2.0.0",
     "@astrojs/react": "^2.2.1",
     "@astrojs/rss": "^4.0.0",
     "@types/react": "18.2.55",
