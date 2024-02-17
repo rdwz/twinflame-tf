@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^0.4.0
     version: 0.4.1
   astro-robots-txt:
-    specifier: ^0.5.0
-    version: 0.5.0
+    specifier: ^1.0.0
+    version: 1.0.0
   eslint:
     specifier: ^8.45.0
     version: 8.56.0
@@ -1507,8 +1507,8 @@ packages:
     resolution: {integrity: sha512-IAgYAlxYRMolaptsFB9quH7RxX4eUeC4UfULCPhT+ILcg7m1kbaxuyUKqGg9Hh+KZ+FNPPDAz7DqUfl+HDWhQg==}
     dev: true
 
-  /astro-robots-txt@0.5.0:
-    resolution: {integrity: sha512-MJDcxBDjEKSp7Uvw32cnmkPHlmjQ/pW5JwzMhKEegFRoGaiSh2i1kkh1QEhk1UpGnAsSondWCoIt2xpG8qjSgA==}
+  /astro-robots-txt@1.0.0:
+    resolution: {integrity: sha512-6JQSLid4gMhoWjOm85UHLkgrw0+hHIjnJVIUqxjU2D6feKlVyYukMNYjH44ZDZBK1P8hNxd33PgWlHzCASvedA==}
     dependencies:
       valid-filename: 4.0.0
       zod: 3.22.4
